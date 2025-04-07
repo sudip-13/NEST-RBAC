@@ -9,7 +9,6 @@ import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { PermissionModule } from './permission/permission.module';
 import { RoleModule } from './role/role.module';
-import { UserModule } from './user/user.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -27,7 +26,6 @@ import { UserModule } from './user/user.module';
     UsersModule,
     PermissionModule,
     RoleModule,
-    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
